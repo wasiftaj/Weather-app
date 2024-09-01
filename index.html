@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
-        <header class="header">
-            <h1>Weather App</h1>
-        </header>
+    <header class="header">
+        <h1>Weather App</h1>
+    </header>
     <div class="container">
-        <div side-area>
-            <h4>Enter Location<h4>
-            <input type="text" placeholder="e.g; New York, Berlin"><br>
-            <button type="submit" name="search" class="search">Search</button><br>
+        <div class="side-area">
+            <h4>Enter Location</h4>
+            <input type="text" id="locationInput" placeholder="e.g; New York, Berlin"><br>
+            <button type="button" id="searchButton" class="search">Search</button><br>
             <p>or</p>
-            <button type="submit" name="Location" class="location">Use current Location</button>
+            <button type="button" id="currentLocationButton" class="location">Use current Location</button>
         </div>
-        <div class="box2">
-            <div class="main-box">
-                <h1 id="city-heading">London</h1>
-                <br>
-                <p class="temprature">Temprature: 28 °C</p>
-                <img src="cloudy.png" alt="cloudy" class="Weather-icon">
-            </div>
+        <div class="display-area">
+            <h1 class="city" id="city">London</h1>
+            <p id="temperature">Temperature: 31°C</p>
         </div>
     </div>
 </body>
